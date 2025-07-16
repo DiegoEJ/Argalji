@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "NeueKabel";
+    src: url("../fonts/NeueKabel.otf") format("opentype");
+}
+@font-face {
+    font-family: "TT Chocolates";
+    src: url("../fonts/TT\ Chocolates\ Trial\ Regular.otf") format("opentype");
+}
+
+:root{
+    --bege:#fef7e5;
+    --preto:#000000;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+}
+
+header{
+    display:flex;
+    width: 100vw;
+    height: 8%;
+    background-color: var(--bege);
+
+    & .header_1part{
+        display: flex;
+        width:inherit;
+        justify-content: space-evenly;
+        align-self: center;
+
+        & a{
+            text-decoration: none;
+            color: var(--preto);
+            font-family: "NeueKabel";
+        }
+    }
+}
